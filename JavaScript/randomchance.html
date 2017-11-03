@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function randomchance (quarters) { 
+                var winNum = 50;
+
+                while (quarters > 0) {
+                    var chance = Math.floor(Math.random() * 100);
+
+                    if (chance == winNum) {
+                        var win = Math.round(Math.random() * 50) + 50;
+                        console.log("I won", quarters, quarters + win);
+                        return quarters + win;
+                    }
+
+                    quarters -= 1;
+                }
+                
+            }
+                    
+            var count = 0;
+            while(true) {
+                var win = randomchance (3);
+                count += 1;
+                if (win == 103) {
+                    break
+                }
+            }
+            
+            console.log (count);
+            
+                    
+          
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

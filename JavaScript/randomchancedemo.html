@@ -1,0 +1,28 @@
+function RandomChance(quarters){
+    var winningNum = 50;
+
+    while(quarters > 0){
+        var chance = Math.round(Math.random() * 100);
+
+        if (chance == winningNum) {
+            var winnings = Math.round(Math.random() * 50) + 50;
+            console.log("i have", quarters, quarters + winnings);
+            return quarters + winnings;
+        }
+
+        quarters -= 1;
+    }
+
+
+    // console.log(chance);
+}
+
+var count = 0;
+while(true){
+    var winnings = RandomChance(3);
+    count += 1;
+    if (winnings == 103) {
+        break
+    }
+}
+console.log(count);

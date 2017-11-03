@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+</head>
+<body>
+    <script>
+        var daysUntilMyBirthday = 60;
+        while (daysUntilMyBirthday >= 0) {
+            if (daysUntilMyBirthday > 30) {
+                console.log (daysUntilMyBirthday + "days until my birthday. Such a long time... :(")
+            }
+            else if (daysUntilMyBirthday < 30 && daysUntilMyBirthday > 5) {
+                console.log (daysUntilMyBirthday + "YAY!!")
+            } 
+            else if (daysUntilMyBirthday <= 5 && daysUntilMyBirthday >= 1) {
+                console.log (daysUntilMyBirthday + "until my birthday")
+            }
+            else {
+                console.log ("Happy Birthday!!!");
+            }
+            daysUntilMyBirthday -= 1;
+        }
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+Last login: Tue May 23 13:14:51 on ttys000
+Mcs-MacBook-Air:~ Mc$ pwd
+/Users/Mc
+Mcs-MacBook-Air:~ Mc$ cd desktop
+Mcs-MacBook-Air:desktop Mc$ cd gittest
+-bash: cd: gittest: No such file or directory
+Mcs-MacBook-Air:desktop Mc$ mkdir gittest
+Mcs-MacBook-Air:desktop Mc$ cd gittest
+Mcs-MacBook-Air:gittest Mc$ git init
+Initialized empty Git repository in /Users/Mc/Desktop/gittest/.git/
+Mcs-MacBook-Air:gittest Mc$ touch index.html
+Mcs-MacBook-Air:gittest Mc$ touch styles.css
+Mcs-MacBook-Air:gittest Mc$ touch aboutMe.txt
+Mcs-MacBook-Air:gittest Mc$ open .
+Mcs-MacBook-Air:gittest Mc$ git add gittest
+fatal: pathspec 'gittest' did not match any files
+Mcs-MacBook-Air:gittest Mc$ cd ..
+Mcs-MacBook-Air:desktop Mc$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+Mcs-MacBook-Air:desktop Mc$ git add gittest
+fatal: Not a git repository (or any of the parent directories): .git
+Mcs-MacBook-Air:desktop Mc$ clear
+
+
+Mcs-MacBook-Air:desktop Mc$ mkdir gittest
+Mcs-MacBook-Air:desktop Mc$ cd gittest
+Mcs-MacBook-Air:gittest Mc$ touch index.html
+Mcs-MacBook-Air:gittest Mc$ touch styles.css
+Mcs-MacBook-Air:gittest Mc$ touch aboutMe.txt
+Mcs-MacBook-Air:gittest Mc$ git init
+Initialized empty Git repository in /Users/Mc/Desktop/gittest/.git/
+Mcs-MacBook-Air:gittest Mc$ git add gittest
+fatal: pathspec 'gittest' did not match any files
+Mcs-MacBook-Air:gittest Mc$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+Did you mean this?
+	add
+Mcs-MacBook-Air:gittest Mc$ gti add .
+-bash: gti: command not found
+Mcs-MacBook-Air:gittest Mc$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+Did you mean this?
+	add
+Mcs-MacBook-Air:gittest Mc$ git add .
+Mcs-MacBook-Air:gittest Mc$ git index.html
+git: 'index.html' is not a git command. See 'git --help'.
+Mcs-MacBook-Air:gittest Mc$ git add index.html
+Mcs-MacBook-Air:gittest Mc$ git log
+fatal: your current branch 'master' does not have any commits yet
+Mcs-MacBook-Air:gittest Mc$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   aboutMe.txt
+	new file:   index.html
+	new file:   styles.css
+
+Mcs-MacBook-Air:gittest Mc$ git commit -m "git comment"
+[master (root-commit) 064f824] git comment
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 aboutMe.txt
+ create mode 100644 index.html
+ create mode 100644 styles.css
+Mcs-MacBook-Air:gittest Mc$ open. gittest
+-bash: open.: command not found
+Mcs-MacBook-Air:gittest Mc$ open.
+-bash: open.: command not found
+Mcs-MacBook-Air:gittest Mc$ open .
+Mcs-MacBook-Air:gittest Mc$ add aboutMe.txt
+-bash: add: command not found
+Mcs-MacBook-Air:gittest Mc$ git add about
+fatal: pathspec 'about' did not match any files
+Mcs-MacBook-Air:gittest Mc$ m
+-bash: m: command not found
+Mcs-MacBook-Air:gittest Mc$ git add aboutMe.txt
+Mcs-MacBook-Air:gittest Mc$ git commit -m "updated aboutMe"
+[master 5bf9be2] updated aboutMe
+ 1 file changed, 1 insertion(+)
+Mcs-MacBook-Air:gittest Mc$ git add aboutMe.txt
+Mcs-MacBook-Air:gittest Mc$ git commit -m "added favorite movie to aboutMe"
+[master d269f46] added favorite movie to aboutMe
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+Mcs-MacBook-Air:gittest Mc$ git log
+commit d269f46d9117713ea6c44fc0c1a93dcf73f037e1 (HEAD -> master)
+Author: McArthur Diaz <mc.arthur_d@hotmail.com>
+Date:   Tue May 23 16:58:32 2017 -0700
+
+    added favorite movie to aboutMe
+
+commit 5bf9be2cda282d6169e2f876f49e309be1d664d8
+Author: McArthur Diaz <mc.arthur_d@hotmail.com>
+Date:   Tue May 23 16:57:35 2017 -0700
+
+    updated aboutMe
+
+commit 064f824ff30a19e2ed48c794bf548cd667d465ea
+Author: McArthur Diaz <mc.arthur_d@hotmail.com>
+Date:   Tue May 23 16:55:11 2017 -0700
+
+    git comment
+Mcs-MacBook-Air:gittest Mc$ git revert git revert -n HEAD
+fatal: bad revision 'git'
+Mcs-MacBook-Air:gittest Mc$ git revert -n HEAD
+Mcs-MacBook-Air:gittest Mc$ git add .
+Mcs-MacBook-Air:gittest Mc$ git log
+commit d269f46d9117713ea6c44fc0c1a93dcf73f037e1 (HEAD -> master)
+Author: McArthur Diaz <mc.arthur_d@hotmail.com>
+Date:   Tue May 23 16:58:32 2017 -0700
+
+    added favorite movie to aboutMe
+
+commit 5bf9be2cda282d6169e2f876f49e309be1d664d8
+Author: McArthur Diaz <mc.arthur_d@hotmail.com>
+Date:   Tue May 23 16:57:35 2017 -0700
+
+    updated aboutMe
+
+commit 064f824ff30a19e2ed48c794bf548cd667d465ea
+Author: McArthur Diaz <mc.arthur_d@hotmail.com>
+Date:   Tue May 23 16:55:11 2017 -0700
+
+    git comment
+Mcs-MacBook-Air:gittest Mc$ git add .
+Mcs-MacBook-Air:gittest Mc$ git commit -m "updated aboutMe1"
+[master cf23f15] updated aboutMe1
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Mcs-MacBook-Air:gittest Mc$ git lod
+git: 'lod' is not a git command. See 'git --help'.
+
+Did you mean this?
+	log
+Mcs-MacBook-Air:gittest Mc$ git log
+commit cf23f15347bee7be94e4e7cf1563acc1666411ee (HEAD -> master)
+Author: McArthur Diaz <mc.arthur_d@hotmail.com>
+Date:   Tue May 23 17:01:34 2017 -0700
+
+    updated aboutMe1
+
+commit d269f46d9117713ea6c44fc0c1a93dcf73f037e1
+Author: McArthur Diaz <mc.arthur_d@hotmail.com>
+Date:   Tue May 23 16:58:32 2017 -0700
+
+    added favorite movie to aboutMe
+
+commit 5bf9be2cda282d6169e2f876f49e309be1d664d8
+Author: McArthur Diaz <mc.arthur_d@hotmail.com>
+Date:   Tue May 23 16:57:35 2017 -0700
+
+    updated aboutMe
+
+commit 064f824ff30a19e2ed48c794bf548cd667d465ea
+Author: McArthur Diaz <mc.arthur_d@hotmail.com>
+Date:   Tue May 23 16:55:11 2017 -0700
+
+    git comment
+:

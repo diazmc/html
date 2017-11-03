@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="jquery.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+           $(document).ready(function(){
+               $('#addClass').click(function(){
+                   $('#red').addClass('red')
+               });
+    
+                $('#slideButton').click(function(){
+                    $('#slideToggle').text('This is a paragraph')
+                })
+    
+               $('#append').click(function(){
+                   $('#appendParagraph').append("<strong>paragraph </strong")
+
+               })
+
+           });
+        </script>
+    </head>
+    <body>
+        <button id = "addClass"> Add Class</button>
+        <p id = "red"> This is a paragraph </p>
+        <button id = "slideButton"> Slide Toggle</button>
+        <p id = "slideToggle"></p>
+        <button id = "append"> Append </button>
+        <p id = "appendParagraph"> This is paragraph </p>
+        <div></div>
+        <div></div>
+        <div></div>
+    </body>
+</html>

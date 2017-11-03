@@ -1,0 +1,33 @@
+Mcs-MacBook-Air:desktop Mc$ cd
+Mcs-MacBook-Air:~ Mc$ cd desktop
+Mcs-MacBook-Air:desktop Mc$ mkdir GitHubRepoAssignment
+Mcs-MacBook-Air:desktop Mc$ cd GitHubRepoAssignment
+Mcs-MacBook-Air:GitHubRepoAssignment Mc$ git init
+Initialized empty Git repository in /Users/Mc/Desktop/GitHubRepoAssignment/.git/
+Mcs-MacBook-Air:GitHubRepoAssignment Mc$ touch readme.md
+Mcs-MacBook-Air:GitHubRepoAssignment Mc$ open .
+Mcs-MacBook-Air:GitHubRepoAssignment Mc$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	readme.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+Mcs-MacBook-Air:GitHubRepoAssignment Mc$ git add readme.md
+Mcs-MacBook-Air:GitHubRepoAssignment Mc$ git commit -m "GitHubRepoAssignment file"
+[master (root-commit) 7a2e6cf] GitHubRepoAssignment file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 readme.md
+Mcs-MacBook-Air:GitHubRepoAssignment Mc$ git remote add origin https://github.com/mcarthurdiaz/GitHubRepoAssignment.git
+Mcs-MacBook-Air:GitHubRepoAssignment Mc$ git push -u origin master
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 233 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/mcarthurdiaz/GitHubRepoAssignment.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+Mcs-MacBook-Air:GitHubRepoAssignment Mc$ 

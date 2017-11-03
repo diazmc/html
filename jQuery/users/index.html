@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+         <link rel="stylesheet" type="text/css" href="index.css">
+    <script>
+        $(document).ready(function(){
+            $("form").submit(function(){
+            var firstData = $('#firstInput').val();
+            var lastData = $('#lastInput').val();
+            var emailData = $('#emailInput').val();
+            var contactData = $('#contactInput').val(); 
+            $('tbody').append($('<tr></tr>'))
+            $('table tbody').append('<td>'+firstData+'</td>')
+            $('table tbody').append('<td>'+lastData+'</td>')
+            $('table tbody').append('<td>'+emailData+'</td>')
+            $('table tbody').append('<td>'+contactData+'</td>')
+
+            
+            return false;
+            });
+     
+        });
+
+    </script>
+    
+    <body>
+            
+            <table cellspacing = "15">
+                <thead>        
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email Address</th>
+                        <th>Contact #</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>   
+                     
+            
+
+        <h1>Add User</h1>
+             
+            <form action = "">
+            
+            First Name:<input id = "firstInput" type = "text"/>
+            <br><br>
+            Last Name:<input id = "lastInput" type = "text"/>
+            <br><br>
+            Email Adress:<input id = "emailInput" type = "text"/>
+            <br><br>
+            Contact No.:<input id = "contactInput" type = "text"/>
+            <br><br>
+
+            <input type = "submit" value = "Add User">
+            
+            </form>
+           
+           
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <link rel="stylesheet" type="text/css" href="ninjatocat.css">        
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+         <script>
+             $(document).ready(function(){
+                 $('img').click(function(){
+                     var current = $(this).attr("src");
+                     var swap = $(this).attr("ninja");
+                     $(this).attr('src', swap).attr("ninja", current);
+                     
+                 });
+             });
+        </script>
+    </head>
+    <body>
+        <div class = "catimg">
+            <img src = "img/cat0.png" ninja = "img/ninja0.png"/>
+            <img src = "img/cat1.png" ninja = "img/ninja1.png"/>
+            <img src = "img/cat2.png" ninja = "img/ninja2.png"/>
+            <img src = "img/cat3.png" ninja = "img/ninja3.png"/>
+            <img src = "img/cat4.png" ninja = "img/ninja4.png"/>
+        </div>
+    </body>
+</html>
